@@ -123,21 +123,19 @@ This is a project that I recently worked on which enables one to stream and anal
       we will uncheck <i>"Require HTTPs for all traffic to the domain."</i><br>
              - Note: This is not recommended for future setups but once again we're doing this for a quick test in this project.
 
-<img width="1680" alt="Elasticsearch 1" src="https://user-images.githubusercontent.com/37382927/97771416-f08ec780-1af9-11eb-8145-6c9f5f052ac9.png">
 
-<img width="1680" alt="Elasticsearch 2" src="https://user-images.githubusercontent.com/37382927/97771417-f1bff480-1af9-11eb-938c-32b704cdeca8.png">
 
    - Once active, we will modify Elastic Search domain <i>twitter's</i> access policy so it can access Kibana. Kibana will be used to visualze the results.      
         - Please remember: leaving this service running will eat up your Free-Tier usage and you will incurr costs.  Stop instances and services after   running this test. <br>
         
-![Elasticsearch 3](https://user-images.githubusercontent.com/37382927/97771418-f2f12180-1af9-11eb-848d-66194a2fe969.png)
+
 
 7. Run twitter-streaming.py script on Cloud9: <br>
 
     - Execute the code in Cloud9 bash terminal by typing the command <i>python streaming-twitter.py</i> 
     - Run the script for about 15-30 minutes to collecte data on the provided keyword (in this example-<i>bitcoin</i>).
 
-![Twitter-streaming](https://user-images.githubusercontent.com/37382927/97771373-53cc2a00-1af9-11eb-8f7b-7889c94c7e10.png)
+
 
 8. Launch AWS Kibana and analyze the collected data: <br>
 
